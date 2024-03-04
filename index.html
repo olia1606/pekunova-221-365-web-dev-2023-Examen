@@ -1,60 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Travel Company</title>
-  </head>
-  <body>
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./image/logo.png" alt="Изображение компании" class="img-fluid" style="max-width: 100px;" />
-          Travel Company
-        </a>
-      </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маршруты по Москве</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="./img/logo.png" alt="" style="max-width: 190px;">
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="./lk.html" class="nav-link px-2 link-secondary">
+            <h4>Личный кабинет</h4>
+          </a></li>
+        <li><a href="#" class="nav-link px-2 link-secondary">
+            <h4>Маршруты</h4>
+          </a></li>
+        <li><a href="#" class="nav-link px-2 link-secondary">
+            <h4>Гиды</h4>
+          </a></li>
+      </ul>
+
+
     </header>
+    <div class="alert alert-primary" role="alert">
+      Важное уведомление!
+    </div>
+  </div>
 
-    <section class="company-section">
-      <div class="container">
-        <p>
-          "Travel Company" - это уникальная организация, предлагающая
-          незабываемые путешествия и приключения для путешественников со всего
-          мира. Наша компания стремится создать для вас уникальные и насыщенные
-          впечатления, обеспечивая высокий уровень сервиса и качественные
-          услуги.
-        </p>
+  <div class="container col-xxl-8 px-4 py-3">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./img/bannerr.png" class="d-block mx-lg-auto img-fluid" alt="" width="700" height="500" loading="lazy">
       </div>
-    </section>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Путешествуйте по захватывающим маршрутам Москвы</h1>
+        <p class="lead">Откройте для себя удивительные уголки Москвы, включающие в себя не только исторические памятники и культурные сокровища, но и скрытые жемчужины, о которых многие не знают. Погрузитесь в богатую историю столицы и насладитесь ее уникальной атмосферой.
+        </p>
 
-    <section class="routes-section container">
-      <h2>Пешеходные маршруты</h2>
-      <div id="routesList"></div>
-    </section>
+      </div>
+    </div>
+  </div>
+ 
 
-    <section class="pagination-section container">
-      <nav aria-label="Page navigation example">
-        <ul class="pagination pagination-lg" id="pagination"></ul>
-      </nav>
-    </section>
+  <div class="container mt-5">
+    <h2 class="pb-2 text-center mb-5">Наши лучшие маршруты</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="./img/routes/1.jpg" class="img-fluid" alt="Парк Сокольники">
+        </div>
+        <div class="col-md-6">
+            <h1 class="mb-3">Центр дизайна Artplay</h1>
+            <h3>Выставки, перформансы, концерты, фестивали, лекции, семинары, мастерские, студии дизайна и архитектуры — целый квартал для креативной работы и отдыха в центре Москвы.
+</h3>
+        </div>
+    </div>
 
-    <section class="guides-section container">
-      <h2>Доступные гиды</h2>
-      <div id="guidesList"></div>
-    </section>
+    <div class="row mt-5">
+        <div class="col-md-6 order-md-2">
+            <img src="./img/routes/2.jpg" class="img-fluid" alt="Зеленый тропик Зеленоград">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <h1 class="mb-3">Парк искусств «Музеон»
 
-    <footer class="footer bg-secondary text-white text-center py-3">
-      <p class="mb-0">Экзаменационное задание</p>
-      <p class="mb-0">Группа 221-365</p>
-    </footer>
+            </h1>
+            <h3>Московский центр притяжения для ценителей разных видов искусства от чтения стихов до сложных художественных инсталляций. В «Музеоне» также проводятся яркие фестивали и праздники, привлекающие горожан и гостей столицы.
 
-    <script src="./js/main.js"></script>
-  </body>
+             </h3>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-6">
+          <img src="./img/routes/3.jpg" class="img-fluid" alt="Парк Сокольники">
+      </div>
+      <div class="col-md-6">
+          <h1 class="mb-3">Музей Магии на Новом Арбате </h1>
+          <h3>Хотите почувствовать себя волшебником, разгадать тайны фокусов легендарных иллюзионистов и самим стать частью магического перформанса? Тогда Музей Магии ждёт вас в своём уникальном, по-настоящему волшебном пространстве!
+    </h3>
+      </div>
+  </div>
+
+  <div class="row mt-5">
+      <div class="col-md-6 order-md-2">
+          <img src="./img/routes/4.jpg" class="img-fluid" alt="Зеленый тропик Зеленоград">
+      </div>
+      <div class="col-md-6 order-md-1">
+          <h1 class="mb-3">Бассейн под открытым небом «Чайка»</h1>
+          <h3>Чайка» — один их самых популярных и современных бассейнов под открытым небом в самом центре Москвы. Здесь можно найти всё необходимое для прекрасного времяпрепровождения в любое время года!
+
+          </h3>
+      </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-6">
+        <img src="./img/routes/5.jpg" class="img-fluid" alt="Парк Сокольники">
+    </div>
+    <div class="col-md-6">
+        <h1 class="mb-3">Лофт-пространство Рarty Hard</h1>
+        <h3>Устроить вечеринку в стиле Майами-бич, день рождения на Диком Западе, состязание в головоломках на Бейкер-стрит или посиделки в общей гостиной Гриффиндора теперь проще простого.
+
+       </h3>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-6 order-md-2">
+        <img src="./img/routes/6.jpg" class="img-fluid" alt="Зеленый тропик Зеленоград">
+    </div>
+    <div class="col-md-6 order-md-1">
+        <h1 class="mb-3">Сад «Эрмитаж»</h1>
+        <h3>Сад, ставший одной из ярчайших жемчужин Москвы.</h3>
+    </div>
+</div>
+<div class="row mt-5">
+  <div class="col-md-6">
+      <img src="./img/routes/7.jpg" class="img-fluid" alt="Парк Сокольники">
+  </div>
+  <div class="col-md-6">
+      <h1 class="mb-3">Смотровая площадка РАН</h1>
+      <h3>С площадки открывается завораживающий вид на панораму Москвы, Фрунзенскую набережную, памятник Гагарину и другие достопримечательности столицы.
+
+        </h3>
+  </div>
+</div>
+
+</div>
+
+  <div class="container mt-5">
+    <form id="filterForm">
+      <div class="mb-3">
+        <h1>Список маршрутов</h1>
+      </div>
+      <div class="mb-3">
+        <label for="searchInput" class="form-label">Поиск по названию:</label>
+        <input type="text" class="form-control" id="searchInput">
+      </div>
+      <button type="submit" class="btn btn-primary" id="searchButton">Применить</button>
+    </form>
+    <br>
+    <table class="table table-bordered" id="routesTable">
+      <th scope="col">Название</th>
+      <th scope="col">Описание</th>
+      <th scope="col">Достопримечательность</th>
+      <th scope="col"></th>
+
+      <tbody id="routesTableBody">
+        <!-- Здесь будут строки с данными -->
+        <!-- ... -->
+      </tbody>
+    </table>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination" id="pagination" style="justify-content: center;">
+        <!-- Сюда будут добавлены элементы пагинации -->
+      </ul>
+    </nav>
+  </div>
+
+
+
+
+
+  <div class="container px-4 py-5">
+    <h2 class="pb-2" id="textforguide">Доступные гиды по маршруту <span id="guideRoute"> </span></h2>
+    <div class="d-flex w-55 py-7 mb-4">
+      <div class="d-flex align-items-center justify-content-center">
+        <select class="form-select mx-3" id="selectLanguages" style="max-width: 200px;">
+          <!-- Опции в селекте -->
+        </select>
+
+        <div class="d-flex align-items-center">
+          <h5 class="mx-4" style="white-space: nowrap;">Опыт работы</h5>
+          <input type="number" placeholder="от" class="form-control input-sm w-100 mx-2" id="minExperience" min="0"
+            step="1">
+          <input type="number" placeholder="до" class="form-control input-sm w-100 mx-2" id="maxExperience" min="0"
+            step="1">
+        </div>
+
+        <button class="btn btn-primary mx-3" id="filterGuides">Применить</button>
+      </div>
+    </div>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">ФИО</th>
+          <th scope="col">Язык</th>
+          <th scope="col">Опыт работы</th>
+          <th scope="col">Стоимость услуги в час</th>
+          <th scope="col">Выбрать</th>
+        </tr>
+      </thead>
+      <tbody id="guidesTableBody">
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderModalLabel">Оформление заявки</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="orderForm" method="POST">
+            <div class="mb-3">
+              <label for="selectedRoute" class="form-label">Название маршрута</label>
+              <input type="text" class="form-control" id="selectedRoute" readonly>
+            </div>
+            <div class="mb-3">
+              <label for="selectedGuide" class="form-label">ФИО гида</label>
+              <input type="text" class="form-control" id="selectedGuide" readonly>
+            </div>
+            <div class="mb-3">
+              <label for="tourDate" class="form-label">Дата экскурсии</label>
+              <input type="date" class="form-control" id="tourDate">
+            </div>
+            <div class="mb-3">
+              <label for="startTime" class="form-label">Время начала экскурсии (с 9 до 23)</label>
+              <input type="time" class="form-control" id="startTime" min="09:00" max="23:00" step="1800">
+            </div>
+            <div class="mb-3">
+              <label for="duration" class="form-label">Длительность экскурсии (часы)</label>
+              <select class="form-select" id="duration">
+                <option value="1">1 час</option>
+                <option value="2">2 часа</option>
+                <option value="3">3 часа</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="groupSize" class="form-label">Количество человек в группе</label>
+              <input type="number" class="form-control" id="groupSize" min="1" max="20">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Дополнительные опции заказа</label><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="option1" value="option1">
+                <label class="form-check-label" for="option1">Быстрый выезд гида. Повышает стоимость на 30%</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="option2" value="option2">
+                <label class="form-check-label" for="option2">Трансфер до ближайших станций метро после экскурсии. Увеличивает стоимость на
+                  25% в выходные дни и на 30% в будни</label>
+              </div>
+           
+            </div>
+            <div class="mb-3">
+            </div>
+            <div class="mb-3">
+              <button type="button" class="btn btn-primary mb-2" id="calculateCost">Рассчитать общую стоимость</button>
+              <input type="text" class="form-control" id="totalCost" readonly>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
+          <button type="button" class="btn btn-primary" id="sendOrder">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer bg-dark py-2">
+    <div class="container">
+      <p class="text-center color-white">
+      <h5 class="text-light text-center">&copy; 2024 Маршруты по Москве</h5>
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

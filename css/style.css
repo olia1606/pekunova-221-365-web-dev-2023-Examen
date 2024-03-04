@@ -1,40 +1,37 @@
-.pagination .page-item.active .page-link {
-  background-color: #007bff;
-  border-color: #007bff;
-  color: #fff;
+
+
+h2{
+    color: #7FFF00;
+}
+h1{
+    color: #380000	;
 }
 
-@media (max-width: 576px) {
-  .pagination {
-    flex-wrap: wrap;
-  }
+h3{
+    color: 	#380000 ;
 }
 
-.routes-section,
-.guides-section {
-  margin-top: 20px;
+body{
+    color: #6c3c0c !important;
+}
+.btn-secondary{
+    background-color: #CCC58F	 !important;
+    border-color:#CCC58F	 !important;
+    color: black !important;
 }
 
-.pagination-section {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
+.alert-primary{
+    background-color: #6c3c0c !important;
+    border-color: #6c3c0c !important;
+    color: white !important;
 }
 
-.pagination {
-  cursor: pointer;
+.page-link{
+    background-color: black !important;
+    /* border-color: brown !important; */
+    color: white !important;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; 
-}
-
-button:hover {
-  background-color: #0056b3;
+.bg-dark{
+    background-color:#CCC58F	 !important;
 }
